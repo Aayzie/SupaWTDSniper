@@ -10,7 +10,7 @@ If the room requires Twitch Login, make sure you login to Twitch first before pa
 
 If you don't know how to open the console, press F12 in your browser then go here:
 
-![image](https://user-images.githubusercontent.com/16715946/179583567-269a14de-386a-4446-b53d-ddb6825bf132.png)
+![image](https://user-images.githubusercontent.com/16715946/179614503-d3a42387-4708-41d4-a984-72729f3f7677.png)
 
 ## How it works
 When a player joins a room, this script will automatically make you join that room.
