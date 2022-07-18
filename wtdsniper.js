@@ -1,7 +1,5 @@
-_yourName = "AAYZIE";
-_targetName = "FORSEN";
+_targetName = "AAYZIEBOT";
 
-_yourName = _yourName.toUpperCase();
 _targetName = _targetName.toUpperCase();
 
 client.onStateChange = function(state){
@@ -13,7 +11,7 @@ client.onStateChange = function(state){
 			break;
 		case Photon.LoadBalancing.LoadBalancingClient.State.ConnectedToMaster:
 			_connected = true;
-            updateName(_yourName);
+			loggedIntoTwitch = true;
 			break;
 		case Photon.LoadBalancing.LoadBalancingClient.State.JoinedLobby:
 			_connected = true;
@@ -60,7 +58,12 @@ const checkIfTargetInRoom = function(){
 client.onRoomListUpdate = function(rooms, roomsUpdated, roomsAdded, roomsRemoved){
     for (room of roomsUpdated){
         if(roomsUpdated[0].playerCount >= 2){
-            client.joinRoom(roomsUpdated[0].name);
+			loggedIntoTwitch = true;
+			twitchUserData = {}
+			twitchUserData.id = "twitch-" + nameInput.value;
+			checkLoggedIntoTwitch();
+			roomInput.value = roomsUpdated[0].name;
+			joinGame();
         }
     }
 }
