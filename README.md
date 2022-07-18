@@ -18,3 +18,6 @@ When a player joins a room, this script will automatically make you join that ro
 If that someone is Forsen (or whoever your target streamer is), you stay in that room. Otherwise, you disconnect and wait for another player to join a room.
 
 **IMPORTANT**: Make sure to keep the WTD tab visible. Switching to another browser tab or alt-tabbing will make you disconnect from the server. If you wanna watch forsen's stream while using this script, do it in another window.
+
+## Known Issues
+If Forsen joins his room while you are still being connected/disconnected from another room, the script will not make you join his room until someone else joins it.
