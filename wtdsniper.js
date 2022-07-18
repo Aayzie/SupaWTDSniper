@@ -1,4 +1,4 @@
-_targetName = "AAYZIEBOT";
+_targetName = "FORSEN";
 
 _targetName = _targetName.toUpperCase();
 
@@ -11,7 +11,6 @@ client.onStateChange = function(state){
 			break;
 		case Photon.LoadBalancing.LoadBalancingClient.State.ConnectedToMaster:
 			_connected = true;
-			loggedIntoTwitch = true;
 			break;
 		case Photon.LoadBalancing.LoadBalancingClient.State.JoinedLobby:
 			_connected = true;
