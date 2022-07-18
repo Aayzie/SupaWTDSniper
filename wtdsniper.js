@@ -7,7 +7,9 @@ _targetName = _targetName.toUpperCase();
 client.onStateChange = function(state){
 	switch(state){
 		case Photon.LoadBalancing.LoadBalancingClient.State.ConnectedToNameServer:
-            client.connectToRegionMaster("US");
+			setTimeout(() => {
+				client.connectToRegionMaster("US");
+			}, 100);
 			break;
 		case Photon.LoadBalancing.LoadBalancingClient.State.ConnectedToMaster:
 			_connected = true;
@@ -34,7 +36,9 @@ client.onStateChange = function(state){
 			_checkReconnectOnVisible = false;
 			_joinRoomAfterConnect = false;
 			initDisplay();
-            client.connectToNameServer();
+			setTimeout(() => {
+				client.connectToNameServer();
+			}, 100);
 			break;
 	}
 };
