@@ -1,5 +1,5 @@
 # SupaWTDSniper
- Immediately joins the room that forsen joins in, before he even posts the code on Discord
+### Immediately join a room that Forsen is in, before he even posts the code on Discord
 
 ## How to use
 Simply **copy and paste** everything from wtdsniper.js to the console, then press Enter.
